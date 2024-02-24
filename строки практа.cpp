@@ -2,7 +2,6 @@
 #include <string>
 #include <vector>
 #include <random>
-#include <algorithm>
 
 using namespace std;
 
@@ -49,7 +48,7 @@ int main()
 
 string removeVovels(string str)
 {
-    vector<char> vovels = { 'a', 'i', 'o', 'e', 'u', 'A', 'I', 'O', 'E', 'U'};
+    vector<char> vovels = { 'a', 'i', 'o', 'e', 'u', 'A', 'I', 'O', 'E', 'U', };
     for (int i = 0; i < str.length(); i++)
     {
         if (find(vovels.begin(), vovels.end(), str[i]) != vovels.end())
